@@ -31,3 +31,9 @@ users = User.objects.all()
 for user in users:
     print(user.username, user.email)`
 ![alt text](image-7.png)
+
+## 發布至Render
+
+issue: reder.yaml 修改`startCommand: "gunicorn core.wsgi:application --bind 0.0.0.0:10000"`
+
+https://django-material-dash2-latest-vbk2.onrender.com
